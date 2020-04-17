@@ -1,5 +1,13 @@
 import pyaudio
 import wave
+from tkinter import filedialog
+from scipy.io.wavfile import read
+
+
+def get_wav(file_path):
+    (fs, data) = read(file_path)
+    return fs, data
+
 
 def record():
 
@@ -7,7 +15,7 @@ def record():
     coding_format = pyaudio.paInt32
     channels = 1
     sampling_rate = 44100
-    output_wave_filename = 'test.wav'
+    file_path = 'recording.wav'
 
     p = pyaudio.PyAudio()
 
@@ -36,9 +44,19 @@ def record():
 
     p.terminate()
 
-    wave_file = wave.open(output_wave_filename, 'wb')
+    wave_file = wave.open(file_path, 'wb')
     wave_file.setnchannels(channels)
     wave_file.setsampwidth(p.get_sample_size(coding_format))
     wave_file.setframerate(sampling_rate)
     wave_file.writeframes(b''.join(frames))
     wave_file.close()
+
+    fs, data = get_wav(file_path)
+    return fs, data
+
+
+def import_wav():
+    file_path = filedialog.askopenfilename()
+    fs, data = get_wav(file_path)
+    return fs, data
+
