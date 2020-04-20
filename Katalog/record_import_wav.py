@@ -2,11 +2,19 @@ import pyaudio
 import wave
 from tkinter import filedialog
 from scipy.io.wavfile import read
+import numpy as np
 
 
 def get_wav(file_path):
+
+    wave_file = wave.open(file_path, 'r')
+    channels = wave_file.getnchannels()
+
     (fs, data) = read(file_path)
-    return fs, data
+
+    out = data[:,0] #póki co jedynie lewy kanał, nalezy poprawić
+
+    return fs, out
 
 
 def record():

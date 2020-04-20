@@ -31,7 +31,10 @@
       <workItem from="1584296265255" duration="6345000" />
       <workItem from="1586938167931" duration="1373000" />
       <workItem from="1587118240175" duration="1175000" />
-      <workItem from="1587119527538" duration="811000" />
+      <workItem from="1587119527538" duration="2584000" />
+      <workItem from="1587211499907" duration="421000" />
+      <workItem from="1587211965640" duration="320000" />
+      <workItem from="1587370587026" duration="1675000" />
     </task>
     <servers />
   </component>
@@ -47,11 +50,11 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="162" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584296320348" />
-    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587119628311">
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587370587127">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587119628311" />
-    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587118242780" />
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587370587127" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587211512181" />
     <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586938191449" />
     <state x="-1297" y="225" key="search.everywhere.popup" timestamp="1584297828801">
       <screen x="-1920" y="0" width="1920" height="1040" />
