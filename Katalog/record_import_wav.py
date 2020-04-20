@@ -6,19 +6,24 @@ import numpy as np
 
 
 def get_wav(file_path):
-
     wave_file = wave.open(file_path, 'r')
     channels = wave_file.getnchannels()
 
     (fs, data) = read(file_path)
 
-    out = data[:,0] #póki co jedynie lewy kanał, nalezy poprawić
+    if channels == 2:
+        out_data = np.sum([data[:, 0], data[:, 1]], axis=0)
+    elif channels == 1:
+        out_data = data
+    else:
+        raise TypeError("Only Mono or Stereo .wav files are accepted")
 
-    return fs, out
+
+
+    return fs, out_data
 
 
 def record():
-
     chunk = 512
     coding_format = pyaudio.paInt32
     channels = 1
@@ -65,6 +70,9 @@ def record():
 
 def import_wav():
     file_path = filedialog.askopenfilename()
-    fs, data = get_wav(file_path)
-    return fs, data
 
+    if file_path.lower().endswith('.wav'):
+        fs, data = get_wav(file_path)
+    else:
+        raise TypeError("Only Mono or Stereo .wav files are acceptable")
+    return fs, data

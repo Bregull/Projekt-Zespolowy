@@ -14,12 +14,11 @@ fs - częstotliwość próbkowania
 '''
 
 
-def plot_spectrogram(fs, samples):
-    pylab.figure(num=None, figsize=(19, 12))
-    pylab.subplot(111)
-    pylab.title('spectrogram of')
-    pylab.specgram(samples, Fs=fs)
-    pylab.savefig('spectrogram.png')
+def plot_spectrogram(spectrogram_fs, spectrogram_samples):
+    plt.figure(num=None, figsize=(19, 12))
+    plt.title("Spectogram")
+    plt.specgram(spectrogram_samples, Fs=spectrogram_fs)
+    plt.savefig('spectrogram.png')
 
 
 def data_input():
