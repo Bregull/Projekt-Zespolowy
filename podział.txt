@@ -1,6 +1,9 @@
-- [ ] Test - Przetestowanie dotychczasowych funkcjonalności narzędzia
-- [ ] Reserach - jak można przedstawić plik audio do uczenia maszynowego
+- [ ] Test - Przetestowanie dotychczasowych funkcjonalności narzędzia, żeby zminimalizować bugi
+- [ ] Reserach - jak można przedstawić plik audio do uczenia maszynowego i co możemy z niego wyciągnąć
 - [ ] Baza Danych - w jaki sposób, dokładnie, należy z niej korzystać (możliwe, że trzeba będzie pytać P. Jarocha)
-- [ ] Research - jakie sieci neuronowe najlepiej sprawdzają się przy pracy z audio
+- [ ] Research - jakiego rodzaju sieci neuronowe najlepiej sprawdzają się przy pracy z audio
 - [ ] Coding - pierwsze próby implementacji biblioteki Keras w projekcie
-- [ ] 
+- [ ] jeszcze nie wiem co tu.
+
+
+!DLA WSZYSTKICH! - PODSTAWY I TEORIA DEEP LEARNINGU
