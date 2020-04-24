@@ -7,6 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -21,6 +22,8 @@
     <expand />
     <select />
   </component>
+=======
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -28,9 +31,12 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+=======
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
   <component name="ProjectId" id="1ZAyb0smC5VmE9TjOXeHcKshyZS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -130,8 +136,19 @@
       <option name="presentableId" value="Default" />
       <updated>1584296261185</updated>
       <workItem from="1584296265255" duration="6345000" />
+<<<<<<< HEAD
       <workItem from="1587733470270" duration="2765000" />
       <workItem from="1587740151618" duration="132000" />
+=======
+      <workItem from="1586938167931" duration="1373000" />
+      <workItem from="1587118240175" duration="1175000" />
+      <workItem from="1587119527538" duration="2584000" />
+      <workItem from="1587211499907" duration="421000" />
+      <workItem from="1587211965640" duration="320000" />
+      <workItem from="1587370587026" duration="1858000" />
+      <workItem from="1587375984525" duration="3407000" />
+      <workItem from="1587460166952" duration="30000" />
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
     </task>
     <servers />
   </component>
@@ -139,6 +156,7 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587733639601">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -153,6 +171,18 @@
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1587740204028" />
     <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1587740204027">
       <screen x="0" y="0" width="1280" height="800" />
+=======
+    <state x="361" y="71" key="#Inspections" timestamp="1587376865921">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Inspections/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587376865921" />
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587120176422">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587120176422" />
+    <state x="-1459" y="162" key="SettingsEditor" timestamp="1584296320348">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1587740204027" />
     <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1587740204026">
@@ -184,10 +214,12 @@
     </state>
     <state x="283" y="58" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1587739311121" />
     <state x="-1459" y="162" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584296320348" />
-    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584296299186">
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587460190701">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584296299186" />
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587460190701" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587375984920" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586938191449" />
     <state x="-1297" y="225" key="search.everywhere.popup" timestamp="1584297828801">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
