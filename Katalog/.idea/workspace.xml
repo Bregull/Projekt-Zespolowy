@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd444d6d-42a8-472b-8948-9ccf5795c7c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature_learning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/make_mel_spectrogram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Katalog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Katalog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cd444d6d-42a8-472b-8948-9ccf5795c7c2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +131,7 @@
       <updated>1584296261185</updated>
       <workItem from="1584296265255" duration="6345000" />
       <workItem from="1587733470270" duration="2765000" />
-      <workItem from="1587740151618" duration="58000" />
+      <workItem from="1587740151618" duration="132000" />
     </task>
     <servers />
   </component>
