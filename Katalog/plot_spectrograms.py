@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import librosa
 
-filename = 'police_car.wav'
+
 
 ''' wykreśla nam spektrogram w formacie png'''
 
@@ -18,10 +18,6 @@ def spectrogram(spectrogram_fs, spectrogram_samples, file_name):
     plt.close()
 
 
-'''   
- plt.figure(num=None, figsize=(19, 12))
-    plt.title("Spectogram")
-plt.specgram(spectrogram_samples, Fs=spectrogram_fs)'''
 
 
 ''' wykreśla spektrogram melowy'''

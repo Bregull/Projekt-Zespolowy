@@ -6,6 +6,16 @@ import numpy as np
 import os
 
 
+'''
+get_wav - wysokopoziomowa. wczytuje plik o wybranej ścieżce, monofonizuje i zwraca fs i data z tego pliku
+
+record - nagrywa wejście z mikrofonu, zapisuje do pliku, następnie ścieżka do pliku trafia do get_wav
+
+import - wybieramy plik z dysku i ścieżka trafia do get_wav
+
+'''
+
+
 def get_wav(file_path):
     wave_file = wave.open(file_path, 'r')
     channels = wave_file.getnchannels()

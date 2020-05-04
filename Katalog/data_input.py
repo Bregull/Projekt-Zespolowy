@@ -8,10 +8,10 @@ i - wybierz z dysku
 informacje są przedstawione w formie 
 data - numpy array zawierający próbki
 fs - częstotliwość próbkowania
+
+
+w zależności od wyboru nagrywa, lub wybiera .wav z dysku
 '''
-
-
-''' w zależności od wyboru nagrywa, lub wybiera .wav z dysku'''
 
 
 def data_input():
@@ -27,4 +27,4 @@ def data_input():
     else:
         return -1
 
-    return input_fs, input_samples, file_name
+    return input_fs, input_samples, file_name  # to wraca do maina
