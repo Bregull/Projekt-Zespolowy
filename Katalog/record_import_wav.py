@@ -3,6 +3,7 @@ import wave
 from tkinter import filedialog
 from scipy.io.wavfile import read
 import numpy as np
+import os
 
 
 def get_wav(file_path):
@@ -18,7 +19,7 @@ def get_wav(file_path):
     else:
         raise TypeError("Only Mono or Stereo .wav files are accepted")
 
-
+    out_data = out_data.astype('float32')
 
     return fs, out_data
 
@@ -75,4 +76,6 @@ def import_wav():
         fs, data = get_wav(file_path)
     else:
         raise TypeError("Only Mono or Stereo .wav files are acceptable")
-    return fs, data
+
+    directory, file_name = os.path.split(file_path)
+    return fs, data, file_name
