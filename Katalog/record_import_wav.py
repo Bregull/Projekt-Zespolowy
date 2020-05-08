@@ -76,7 +76,7 @@ def record():
     wave_file.close()
 
     fs, data = get_wav(file_path)
-    return fs, data
+    return fs, data, file_path
 
 
 def import_wav():
