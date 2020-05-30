@@ -98,7 +98,7 @@ x_test = x_test.reshape(x_test.shape[0], num_rows, num_columns, num_channels)
 num_labels = yy.shape[1]
 filter_size = 2
 
-'''
+
 # Construct model
 model = Sequential()
 model.add(Conv2D(filters=16, kernel_size=2, input_shape=(num_rows, num_columns, num_channels), activation='relu'))
@@ -178,7 +178,7 @@ plt.legend(['train', 'test'], loc='upper left')
 plt.show()
 
 '''
-
+#moduł wczytywania zapisanej sieci neuronowej
 model = tf.keras.models.load_model('weights.best.basic_cnn.hdf5')
 
 # Show the model architecture
@@ -186,6 +186,7 @@ model.summary()
 
 loss, acc = model.evaluate(x_test,  y_test, verbose=2)
 print('Restored model, accuracy: {:5.2f}%'.format(100*acc))
+'''
 
 
 
@@ -205,30 +206,4 @@ def print_prediction(file_name):
         print(category[0], "\t\t : ", format(predicted_proba[i], '.32f') )
 
 
-
-
-print('dzieci')
-print_prediction('/Users/jacekfica/Desktop/testy/dzieci.wav')
-print('auto')
-print_prediction('/Users/jacekfica/Desktop/testy/auto.wav')
-print('klima')
-print_prediction('/Users/jacekfica/Desktop/testy/klima.wav')
-print('mlotek')
-print_prediction('/Users/jacekfica/Desktop/testy/mlotek.wav')
-print('psy')
-print_prediction('/Users/jacekfica/Desktop/testy/psy.wav')
-print('psy')
-print_prediction('/Users/jacekfica/Desktop/testy/psy1.wav')
-print('psy')
-print_prediction('/Users/jacekfica/Desktop/testy/psy2.wav')
-print('shot')
-print_prediction('/Users/jacekfica/Desktop/testy/shot.wav')
-print('silnik')
-print_prediction('/Users/jacekfica/Desktop/testy/silnik.wav')
-print('muzyka ulicy')
-print_prediction('/Users/jacekfica/Desktop/testy/street_music.wav')
-print('syrena')
-print_prediction('/Users/jacekfica/Desktop/testy/syrena.wav')
-print('wiercenie')
-print_prediction('/Users/jacekfica/Desktop/testy/wiercenie.wav')
 

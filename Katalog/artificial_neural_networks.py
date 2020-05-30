@@ -34,27 +34,6 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 print(model.summary())
 history = model.fit(x_train, y_train, batch_size=10, epochs=100, verbose=1, validation_split=0.15)
 
-print(history.history.keys())
-# summarize history for accuracy
-plt.plot(history.history['accuracy'])
-plt.plot(history.history['val_accuracy'])
-plt.title('model accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('accuracy_ann.png')
-plt.show()
-
-
-# summarize history for loss
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('loss_ann.png')
-plt.show()
 
 
 
