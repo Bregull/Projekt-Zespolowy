@@ -41,3 +41,5 @@ def mel_spectrogram(spectrogram_fs, spectrogram_samples, file_name):
     plt.savefig('mel_spectrogram.png')
 
 mel_spectrogram(44100, )
+spectrogram(44100, )
+
