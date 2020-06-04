@@ -1,5 +1,5 @@
 import record_import_wav
-
+import sys
 '''
 jesteśmy w stanie wybrać czy chcemy nagrać, czy wybrać plik wav z dysky
 r - nagraj -> przerwanie nagrania 'ctr + c'
@@ -13,18 +13,20 @@ fs - częstotliwość próbkowania
 w zależności od wyboru nagrywa, lub wybiera .wav z dysku
 '''
 
+print('record or import? (r/i): ')
 
 def data_input():
-    answer = input('record or import? (r/i): ')
+    for answer in sys.argv[1]:
+        while answer != 'r' and answer != 'i':
+            answer = input('Wrong input\nrecord or import? (r/i): ')
 
-    while answer != 'r' and answer != 'i':
-        answer = input('Wrong input\nrecord or import? (r/i): ')
-
-    if answer == 'r':
-        input_fs, input_samples, file_name = record_import_wav.record()
-    elif answer == 'i':
-        input_fs, input_samples, file_name = record_import_wav.import_wav()
-    else:
-        return -1
-
+        if answer == 'r':
+            input_fs, input_samples, file_name = record_import_wav.record()
+        elif answer == 'i':
+            input_fs, input_samples, file_name = record_import_wav.import_wav()
+        else:
+            return -1
+        
     return input_fs, input_samples, file_name  # to wraca do maina
+
+print(data_input())
