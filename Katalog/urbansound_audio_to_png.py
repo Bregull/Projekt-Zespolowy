@@ -4,38 +4,46 @@ from matplotlib import pyplot as plt
 import librosa.display
 import librosa
 import numpy as np
+from shutil import copyfile
 
 '''
 Skrypt ten generuje nam spektrogramy z bazy danych urban sound.
-skrypt uruchamiamy komendą python urbansound_get_files.py
+skrypt uruchamiamy komendą python urbansound_audio_to_png.py
 Napisany jest w ten sposób, że zapisuje z wybranej przez nas lokalizacji
 (Lokalizacją jest folder UrbanSound8K!) spektrogramy każdego z plików wav
-ALE
-zapisuje je do folderu w którym się aktualnie znajdujemy tworzac nowy folder UrbanSound_Spectrograms
-i tu jest haczyk!
-trzeba najpierw stworzyć konkretną ścieżkę w folderze Katalog:
 
-UrbanSound_Spectrograms
-    |-audio
-        |-fold1
-        |-fold2
-        |-fold3
-        |-fold4
-        |-fold5
-        |-fold6
-        |-fold7
-        |-fold8
-        |-fold9
-        |-fold10
+zapisuje je do folderu w którym się aktualnie znajdujemy tworzac nowy folder UrbanSound_Spectrograms
+
 
 Skrypt zapisuje tylko jeden rodzaj spektrogramu, więc po zrobieniu melowych, 
 należy zamienić linijke nr 67 aby wygenerować spektrogramy liniowe.
+
+np.
+
+create_folders()
+paths = get_file_paths()
+loop_files(paths)
+
+
 '''
 
+def create_folders():
+    if not os.path.isdir('UrbanSound_Spectrograms'):
+        try:
+            os.mkdir('UrbanSound_Spectrograms')
+            os.mkdir('UrbanSound_Spectrograms/audio')
+            os.mkdir('UrbanSound_Spectrograms/metadata')
+            for i in range(10):
+                os.mkdir(f'UrbanSound_Spectrograms/audio/fold{i+1}')
+        except Exception as e:
+            print(f'Exception found: {e}')
 
 def get_file_paths():
     directory = filedialog.askdirectory(title="UrbanSound directory")
     audio_directory = directory + "/audio/"
+    csv_directory = directory + '/metadata/UrbanSound8K.csv'
+    copyfile(csv_directory, 'UrbanSound_Spectrograms/metadata/UrbanSound8K.csv')
+
 
     folder_names = []
     path_list = []
@@ -104,6 +112,3 @@ def spectrogram(file_path, output_path):
     plt.savefig(output_path)
     plt.close()
 
-
-paths = get_file_paths()
-loop_files(paths)
