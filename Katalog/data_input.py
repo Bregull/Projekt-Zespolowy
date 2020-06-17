@@ -29,4 +29,4 @@ def data_input():
         
     return input_fs, input_samples, file_name  # to wraca do maina
 
-print(data_input())
+#print(data_input())
