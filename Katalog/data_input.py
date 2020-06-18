@@ -13,12 +13,11 @@ fs - częstotliwość próbkowania
 w zależności od wyboru nagrywa, lub wybiera .wav z dysku
 '''
 
-print('record or import? (r/i): ')
 
 def data_input():
     for answer in sys.argv[1]:
-        while answer != 'r' and answer != 'i':
-            answer = input('Wrong input\nrecord or import? (r/i): ')
+        #while answer != 'r' and answer != 'i':
+            #answer = input('Wrong input\nrecord or import? (r/i): ')
 
         if answer == 'r':
             input_fs, input_samples, file_name, file_path = record_import_wav.record()
@@ -29,4 +28,4 @@ def data_input():
         
     return input_fs, input_samples, file_name, file_path  # to wraca do maina
 
-print(data_input())
+#print(data_input())
