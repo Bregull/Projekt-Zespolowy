@@ -1,22 +1,40 @@
+<!DOCTYPE html>
 
-<html>
+<html lang="pl">
 <head>
-<title>
-Python button script
-</title>
+    <meta charset="UTF-8">
+    <title>Projekt Zespołowy</title>
+
+    {% load static %}
+ <!-- Prism CSS -->
+    <link href="{% static "tinymce/css/prism.css" %}" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-<form action="/external/" method="post">
-{% csrf_token %}
-Input Text:
-<input type="text" name="param" required><br><br>
-{{data_external}}<br><br>
-{{data1}}
-<br><br>
-<input type="submit" value="Execute External Python Script">
-</form>
+
+    <nav class="indigo darken-3">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo center">AI Rozpoznawanie dźwięków</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="/zespol">Aplikacja</a></li>
+            <li><a href="https://github.com/Bregull/Projekt_Zespolowy_Dolby" target="_blank">Git Hub</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <br>
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static "tinymce/js/prism.js" %}"> </script>
 </body>
 </html>
+
+
+
 
 
 

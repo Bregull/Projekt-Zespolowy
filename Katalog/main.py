@@ -1,6 +1,5 @@
 from data_input import *
 from plot_spectrograms import *
-import convolutional_neural_networks
 
 '''
 main.py obsługuje całą funkcjonalność aplikacji
@@ -17,4 +16,3 @@ file_name - nazwa pliku
 fs, samples, file_name = data_input()  # wybieramy plik który chcemy przeanalizować
 spectrogram(fs, samples, file_name)  # plotuje i zapisuje do .png spektrogram
 mel_spectrogram(fs, samples, file_name)  # plotuje i zapisuje do .png spektrogram melowy
-convolutional_neural_networks.print_prediction(file_name)

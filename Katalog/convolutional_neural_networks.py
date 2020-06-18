@@ -98,7 +98,7 @@ x_test = x_test.reshape(x_test.shape[0], num_rows, num_columns, num_channels)
 num_labels = yy.shape[1]
 filter_size = 2
 
-'''
+
 # Construct model
 model = Sequential()
 model.add(Conv2D(filters=16, kernel_size=2, input_shape=(num_rows, num_columns, num_channels), activation='relu'))
@@ -180,7 +180,7 @@ plt.show()
 '''
 #moduł wczytywania zapisanej sieci neuronowej
 model = tf.keras.models.load_model('weights.best.basic_cnn.hdf5')
-'''
+
 # Show the model architecture
 model.summary()
 
@@ -198,13 +198,12 @@ def print_prediction(file_name):
     predicted_vector = model.predict_classes(prediction_feature)
     predicted_class = le.inverse_transform(predicted_vector)
     print("The predicted class is:", predicted_class[0], '\n')
-'''
+
     predicted_proba_vector = model.predict_proba(prediction_feature)
     predicted_proba = predicted_proba_vector[0]
     for i in range(len(predicted_proba)):
         category = le.inverse_transform(np.array([i]))
-        print(category[0], "\t\t : ", format(predicted_proba[i], '.32f') ) '''
-
+        print(category[0], "\t\t : ", format(predicted_proba[i], '.32f') )
 
 
 

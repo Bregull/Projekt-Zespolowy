@@ -1,0 +1,48 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card indigo lighten-1">
+            <div class="card-content white-text">
+              <span class="card-title">Wczytaj próbkę z pliku</span>
+              <p>Akceptowalny typ pliku to <strong>.wav</strong> mono/stereo.</p>
+            </div>
+            <div class="card-action">
+              <input type="button" class="waves-effect indigo accent-1 btn" value="i" onclick="getElementById('problem').value=this.value;">   Wczytaj z pliku</input>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card indigo lighten-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Nagraj próbkę</span>
+                    <p>Naciśnij przycisk i nagraj próbkę.</p>
+                </div>
+                <div class="card-action">
+                    <input type="button" class="waves-effect indigo accent-1 btn" value="r" onclick="getElementById('problem').value=this.value;">   Nagraj próbkę</input>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <form action="/external" method="post" class="center-align">
+                {% csrf_token %}
+                <input style="display: none" class="pole_wyboru" type="text" name="param" id="problem">
+                {{data_external}}<br><br>
+                {{data1}}
+                <br><br><br>
+                <strong>Po wybraniu akcji, zatwierdź:</strong>
+                <br>
+                <input type="submit" class="waves-effect indigo accent-1 btn" value="Potwierdź">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}

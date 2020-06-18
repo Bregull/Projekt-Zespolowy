@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ef2a3d-e364-4351-817f-a5204b3cb46a" name="Default Changelist" comment="" />
+    <list default="true" id="cd444d6d-42a8-472b-8948-9ccf5795c7c2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+=======
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -14,10 +31,14 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1cut1aD7aas5vNyCKsYiKZxqoZa" />
+=======
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
+  <component name="ProjectId" id="1ZAyb0smC5VmE9TjOXeHcKshyZS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,66 +46,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.make_mel_spectrogram">
+    <configuration name="feature_learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Katalog" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="convolutional_neural_networks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Katalog" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python36\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolutional_neural_networks.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_learning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,22 +80,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python36\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -125,30 +95,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="record_import_wav" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="make_mel_spectrogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Katalog" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python36\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/record_import_wav.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_mel_spectrogram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,9 +119,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.make_mel_spectrogram" />
+        <item itemvalue="Python.feature_learning" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.record_import_wav" />
-        <item itemvalue="Python.convolutional_neural_networks" />
       </list>
     </recent_temporary>
   </component>
@@ -170,13 +130,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="49ef2a3d-e364-4351-817f-a5204b3cb46a" name="Default Changelist" comment="" />
-      <created>1591390092584</created>
+      <changelist id="cd444d6d-42a8-472b-8948-9ccf5795c7c2" name="Default Changelist" comment="" />
+      <created>1584296261185</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1591390092584</updated>
-      <workItem from="1591390096609" duration="709000" />
-      <workItem from="1591440362219" duration="8896000" />
+      <updated>1584296261185</updated>
+      <workItem from="1584296265255" duration="6345000" />
+<<<<<<< HEAD
+      <workItem from="1587733470270" duration="2765000" />
+      <workItem from="1587740151618" duration="132000" />
+=======
+      <workItem from="1586938167931" duration="1373000" />
+      <workItem from="1587118240175" duration="1175000" />
+      <workItem from="1587119527538" duration="2584000" />
+      <workItem from="1587211499907" duration="421000" />
+      <workItem from="1587211965640" duration="320000" />
+      <workItem from="1587370587026" duration="1858000" />
+      <workItem from="1587375984525" duration="3407000" />
+      <workItem from="1587460166952" duration="30000" />
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
     </task>
     <servers />
   </component>
@@ -184,47 +156,78 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591440435692">
+<<<<<<< HEAD
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587733639601">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1587733639601" />
+    <state x="329" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587739047642">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="329" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1587739047642" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1587740204028">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1587740204028" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1587740204027">
+      <screen x="0" y="0" width="1280" height="800" />
+=======
+    <state x="361" y="71" key="#Inspections" timestamp="1587376865921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591440435692" />
-    <state x="343" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592383824927">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="343" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1592383824927" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1592384361225">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1592384361225" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1592384361223">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1592384361223" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1592384361222">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1592384361222" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1592384361224">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1592384361224" />
-    <state x="231" y="53" key="SettingsEditor" timestamp="1592383165969">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="231" y="53" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1592383165969" />
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591440482007" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591440382370">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591440382370" />
-    <state x="-1395" y="310" width="672" height="678" key="search.everywhere.popup" timestamp="1591443866717">
+    <state x="361" y="71" key="#Inspections/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587376865921" />
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587120176422">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1395" y="310" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591443866717" />
+    <state x="-1230" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587120176422" />
+    <state x="-1459" y="162" key="SettingsEditor" timestamp="1584296320348">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+>>>>>>> a2f4723007f0433acdde6808629268a6f62e6b60
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1587740204027" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1587740204026">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1587740204026" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1587740204028">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1587740204028" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1587739954885">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1587739954885" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1587739954882">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1587739954882" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1587739954881">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1587739954881" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1587739954884">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1587739954884" />
+    <state x="283" y="58" key="SettingsEditor" timestamp="1587739311121">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="283" y="58" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1587739311121" />
+    <state x="-1459" y="162" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584296320348" />
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587460190701">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587460190701" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587375984920" />
+    <state x="525" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586938191449" />
+    <state x="-1297" y="225" key="search.everywhere.popup" timestamp="1584297828801">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="225" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584297828801" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Katalog$convolutional_neural_networks.coverage" NAME="convolutional_neural_networks Coverage Results" MODIFIED="1592383692172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Katalog$record_import_wav.coverage" NAME="record_import_wav Coverage Results" MODIFIED="1592383998483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Katalog$main.coverage" NAME="main Coverage Results" MODIFIED="1592384247043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Katalog$feature_learning.coverage" NAME="feature_learning Coverage Results" MODIFIED="1587740175835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Katalog$make_mel_spectrogram.coverage" NAME="make_mel_spectrogram Coverage Results" MODIFIED="1587740196549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Katalog$main.coverage" NAME="main Coverage Results" MODIFIED="1587734423245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
