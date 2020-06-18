@@ -21,12 +21,12 @@ def data_input():
             answer = input('Wrong input\nrecord or import? (r/i): ')
 
         if answer == 'r':
-            input_fs, input_samples, file_name = record_import_wav.record()
+            input_fs, input_samples, file_name, file_path = record_import_wav.record()
         elif answer == 'i':
-            input_fs, input_samples, file_name = record_import_wav.import_wav()
+            input_fs, input_samples, file_name, file_path = record_import_wav.import_wav()
         else:
             return -1
         
-    return input_fs, input_samples, file_name  # to wraca do maina
+    return input_fs, input_samples, file_name, file_path  # to wraca do maina
 
 print(data_input())

@@ -76,7 +76,8 @@ def record():
     wave_file.close()
 
     fs, data = get_wav(file_path)
-    return fs, data, file_path
+    directory = ''
+    return fs, data, file_path, directory
 
 
 def import_wav():
@@ -88,4 +89,4 @@ def import_wav():
         raise TypeError("Only Mono or Stereo .wav files are acceptable")
 
     directory, file_name = os.path.split(file_path)
-    return fs, data, file_name
+    return fs, data, file_name, directory

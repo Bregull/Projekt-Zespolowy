@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import os
+from os.path import dirname
 import librosa
 from sklearn.preprocessing import LabelEncoder
 from keras.utils import to_categorical
@@ -11,18 +12,18 @@ from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Convolution2D, Conv2D, MaxPooling2D, GlobalAveragePooling2D
 import matplotlib.pyplot as plt
 import tensorflow as tf
-
-
+from tkinter import filedialog
 
 max_pad_len = 174
+
 
 def extract_features(file_name):
     try:
         audio, sample_rate = librosa.load(file_name, res_type='kaiser_fast', duration=4)
-        print(audio.shape)
+        #print(audio.shape)
         mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
         pad_width = max_pad_len - mfccs.shape[1]
-        print(pad_width)
+        #print(pad_width)
         mfccs = np.pad(mfccs, pad_width=((0, 0), (0, pad_width)), mode='constant')
 
     except Exception as e:
@@ -30,6 +31,7 @@ def extract_features(file_name):
         return None
 
     return mfccs
+
 
 def extract_metadata():
     if os.path.isfile('conv/X_array.npy') and os.path.isfile('conv/y_array.npy'):
@@ -40,10 +42,10 @@ def extract_metadata():
 
     else:
         # Set the path to the full UrbanSound dataset
+        urban_sound_directory = filedialog.askdirectory(title="UrbanSound directory")
+        fulldatasetpath = f'{urban_sound_directory}/audio/'
 
-        fulldatasetpath = '/Users/jacekfica/Desktop/UrbanSound8K/audio/'
-
-        metadata = pd.read_csv('/Users/jacekfica/Desktop/UrbanSound8K/metadata/UrbanSound8K.csv')
+        metadata = pd.read_csv(f'{urban_sound_directory}/metadata/UrbanSound8K.csv')
 
         features = []
 
@@ -62,8 +64,6 @@ def extract_metadata():
 
         print('Finished feature extraction from ', len(featuresdf), ' files')
 
-
-
         # Convert features and corresponding classification labels into numpy arrays
         X = np.array(featuresdf.feature.tolist())
         y = np.array(featuresdf.class_label.tolist())
@@ -75,21 +75,21 @@ def extract_metadata():
         return X, y
 
 
-
 num_rows = 40
 num_columns = 174
 num_channels = 1
 
 
-
-X, y = extract_metadata()
+#X, y = extract_metadata()
+X = np.load(f'{dirname(dirname(os.getcwd()))}/conv/X_array_compressed.npz')
+y = np.load(f'{dirname(dirname(os.getcwd()))}/conv/y_array.npy')
 
 # Encode the classification labels
 le = LabelEncoder()
 yy = to_categorical(le.fit_transform(y))
 
 
-
+'''
 x_train, x_test, y_train, y_test = train_test_split(X, yy, test_size=0.2, random_state = 42)
 
 x_train = x_train.reshape(x_train.shape[0], num_rows, num_columns, num_channels)
@@ -104,61 +104,41 @@ model = Sequential()
 model.add(Conv2D(filters=16, kernel_size=2, input_shape=(num_rows, num_columns, num_channels), activation='relu'))
 model.add(MaxPooling2D(pool_size=2))
 model.add(Dropout(0.2))
-
 model.add(Conv2D(filters=32, kernel_size=2, activation='relu'))
 model.add(MaxPooling2D(pool_size=2))
 model.add(Dropout(0.2))
-
 model.add(Conv2D(filters=64, kernel_size=2, activation='relu'))
 model.add(MaxPooling2D(pool_size=2))
 model.add(Dropout(0.2))
-
 model.add(Conv2D(filters=128, kernel_size=2, activation='relu'))
 model.add(MaxPooling2D(pool_size=2))
 model.add(Dropout(0.2))
 model.add(GlobalAveragePooling2D())
-
 model.add(Dense(num_labels, activation='softmax'))
-
 model.compile(loss='categorical_crossentropy', metrics=['accuracy'], optimizer='adam')
-
 # Display model architecture summary
 model.summary()
-
 # Calculate pre-training accuracy
 score = model.evaluate(x_test, y_test, verbose=1)
 accuracy = 100*score[1]
-
 print("Pre-training accuracy: %.4f%%" % accuracy)
-
 from keras.callbacks import ModelCheckpoint
 from datetime import datetime
-
 #num_epochs = 12
 #num_batch_size = 128
-
 num_epochs = 72
 num_batch_size = 256
-
 checkpointer = ModelCheckpoint(filepath='weights.best.basic_cnn.hdf5',
                                verbose=1, save_best_only=True)
 start = datetime.now()
-
 history = model.fit(x_train, y_train, batch_size=num_batch_size, epochs=num_epochs, validation_data=(x_test, y_test), callbacks=[checkpointer], verbose=1)
-
-
 duration = datetime.now() - start
 print("Training completed in time: ", duration)
-
 # Evaluating the model on the training and testing set/
 score = model.evaluate(x_train, y_train, verbose=0)
 print("Training Accuracy: ", score[1])
-
 score = model.evaluate(x_test, y_test, verbose=0)
 print("Testing Accuracy: ", score[1])
-
-
-
 print(history.history.keys())
 # summarize history for accuracy
 plt.plot(history.history['accuracy'])
@@ -176,20 +156,19 @@ plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
 plt.show()
+'''
+# moduł wczytywania zapisanej sieci neuronowej
+model = tf.keras.models.load_model(f'{dirname(dirname(os.getcwd()))}/weights.best.basic_cnn.hdf5')
 
 '''
-#moduł wczytywania zapisanej sieci neuronowej
-model = tf.keras.models.load_model('weights.best.basic_cnn.hdf5')
 
 # Show the model architecture
 model.summary()
-
 loss, acc = model.evaluate(x_test,  y_test, verbose=2)
 print('Restored model, accuracy: {:5.2f}%'.format(100*acc))
 '''
-
-
-
+classess = ['air_conditioner', 'car_horn', 'children_playing', 'dog_bark', 'drilling', 'engine_idling', 'gun_shot',
+            'jackhammer', 'siren', 'street_music']
 
 def print_prediction(file_name):
     prediction_feature = extract_features(file_name)
@@ -197,13 +176,14 @@ def print_prediction(file_name):
 
     predicted_vector = model.predict_classes(prediction_feature)
     predicted_class = le.inverse_transform(predicted_vector)
-    print("The predicted class is:", predicted_class[0], '\n')
+    predicted_class_name = classess[int(predicted_class[0])]
+    print("The predicted class is: ", predicted_class_name)
+    return predicted_class_name
 
+
+'''
     predicted_proba_vector = model.predict_proba(prediction_feature)
     predicted_proba = predicted_proba_vector[0]
     for i in range(len(predicted_proba)):
         category = le.inverse_transform(np.array([i]))
-        print(category[0], "\t\t : ", format(predicted_proba[i], '.32f') )
-
-
-
+        print(category[0], "\t\t : ", format(predicted_proba[i], '.32f') ) '''
