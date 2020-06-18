@@ -81,7 +81,7 @@ num_channels = 1
 
 
 #X, y = extract_metadata()
-X = np.load(f'{dirname(dirname(os.getcwd()))}/conv/X_array_compressed.npz')
+X = np.load(f'{dirname(dirname(os.getcwd()))}/conv/X_array.npy')
 y = np.load(f'{dirname(dirname(os.getcwd()))}/conv/y_array.npy')
 
 # Encode the classification labels
